@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 布局flex */
+
+.df {
+  display: flex;
+}
+.fl-dc {
+  flex-direction: column;
+}
+.al-ct {
+  align-items: center;
+}
+.al-fe {
+  align-items: flex-end;
+}
+.al-fs {
+  align-items: start;
+}
+.jc-ct {
+  justify-content: center;
+}
+.jc-fe {
+  justify-content: flex-end;
+}
+.jc-fs {
+  justify-content: flex-start;
+}
+/* 字号大小 */
+.fs-12 {
+  font-size: 12px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+
+/* 文字靠边 */
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
+}
+.ta-l {
+  text-align: left;
+}
