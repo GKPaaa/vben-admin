@@ -7,6 +7,9 @@
 .df {
   display: flex;
 }
+.fl-1 {
+  flex: 1;
+}
 .fl-dc {
   flex-direction: column;
 }
@@ -105,6 +108,9 @@
 }
 .pb-20 {
   padding-bottom: 20px;
+}
+.pr-16 {
+  padding-right: 16px;
 }
 /* 外边距 */
 .m-0160 {

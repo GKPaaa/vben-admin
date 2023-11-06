@@ -59,7 +59,7 @@ const loginin = (): void => {
   height: 40vh;
   opacity: 0;
   background-color: #fff;
-  animation: loginshow 0.8s linear 1.2s 1 normal forwards;
+  animation: loginshow 0.5s linear 0s 1 normal forwards;
   box-shadow: 0 0 10px 5px #ddd;
 }
 
@@ -69,8 +69,7 @@ const loginin = (): void => {
   }
 
   50% {
-    opacity: 0.2;
-
+    opacity: 0;
   }
 
   100% {
@@ -88,7 +87,7 @@ const loginin = (): void => {
   /* 3、动画执行速度 */
   animation-timing-function: linear;
   /* 4、等待时长 */
-  animation-delay: 1.2s;
+  animation-delay: 0.4;
   /* 5、设置动画播放次数 */
   // animation-iteration-count: infinite;
   /* 6、设置动画是否反向播放 */

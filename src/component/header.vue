@@ -1,7 +1,7 @@
 <template>
   <div class="df jc-sb ai-ct h-100p">
     <p>logo</p>
-    <!-- <p class="pointer">退出登录</p> -->
+    <div class="fl-1 ta-r p-0160">用户名</div>
     <el-popover trigger="click">
       <template #default>
         <el-button class="w-100p" link @click="loginout">退出登录</el-button>
@@ -11,8 +11,6 @@
           <Setting />
         </el-icon>
       </template>
-      <!-- <el-button>trigger me</el-button> -->
-
     </el-popover>
 
   </div>
