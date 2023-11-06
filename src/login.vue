@@ -1,11 +1,52 @@
 <template>
   <div class="Smegma">
   </div>
-  <div class="loginInfo">123</div>
+  <div class="loginInfo br-24 p-0160 df jc-ct ai-ct fl-dc ">
+
+    <el-input v-model="login.account" placeholder="请输入账号" class="input-with-select mb-10">
+      <template #prepend>
+        <el-button :icon="User" />
+      </template>
+    </el-input>
+
+    <el-input v-model="login.password" placeholder="请输入密码" class="input-with-select mb-12">
+      <template #prepend>
+        <el-button :icon="Lock" />
+      </template>
+    </el-input>
+    <el-button color="#626aef" :loading="login.isloading" @click="loginin" class="w-100p">{{ login.txt }}</el-button>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { User, Lock } from '@element-plus/icons-vue'
+import { Ref, ref } from 'vue'
+import { useRouter } from "vue-router";
+const router = useRouter()
+type logintype = {
+  account: string,
+  password: string,
+  isloading: boolean,
+  txt: string
+}
+const login: Ref<logintype> = ref({
+  account: '',
+  password: '',
+  isloading: false,
+  txt: '登录'
+})
 
+const loginin = (): void => {
+  login.value.isloading = true
+  login.value.txt = '正在登录，请稍等...'
+  router.push({ name: 'home' })
+  // setTimeout(() => {
+  //   login.value.isloading = false
+  //   login.value.txt = '登  录'
+  // }, 800);
+  // console.log(login.value);
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -29,6 +70,7 @@
 
   50% {
     opacity: 0.2;
+
   }
 
   100% {
