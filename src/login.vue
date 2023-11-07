@@ -40,6 +40,7 @@ const loginin = (): void => {
   login.value.isloading = true
   login.value.txt = '正在登录，请稍等...'
   router.push({ name: 'home' })
+  localStorage.setItem('Name', '这是一个用户名字')
   // setTimeout(() => {
   //   login.value.isloading = false
   //   login.value.txt = '登  录'
