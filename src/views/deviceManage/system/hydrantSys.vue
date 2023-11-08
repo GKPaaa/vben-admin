@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-f">
     室外消防栓系统
   </div>
 </template>

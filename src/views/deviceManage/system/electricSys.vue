@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-f">
     智慧安全用电系统
   </div>
 </template>

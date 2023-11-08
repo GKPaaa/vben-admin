@@ -23,6 +23,7 @@ const routes = [
         meta: {
           needLogin: true, // 需要登录
         },
+        redirect: { name: "monitor" },
         children: [
           {
             path: "/monitor", // 火灾检测报警系统

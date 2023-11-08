@@ -49,15 +49,19 @@
 
         </el-header>
         <el-main class="bg-dd" style="padding: 12px 0 0 0;">
-          <router-view></router-view>
+          <transition name="custom-classes" enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut">
+            <router-view></router-view>
+          </transition>
         </el-main>
+
       </el-container>
     </el-container>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onBeforeMount } from 'vue'
+import { ref, onBeforeMount, watch } from 'vue'
 import { Tickets, Fold, Expand } from '@element-plus/icons-vue'
 import { useRouter } from "vue-router";
 const router = useRouter()
@@ -78,6 +82,10 @@ const open = () => {
 const handleSelect = (key: string, keyPath: string[]) => {
   router.push({ name: key })
 }
+// 监听路由变化 激活左侧菜单栏选项
+watch(() => router.currentRoute.value, (n, o) => {
+  defaultRoute.value = n.name || 'monitor'
+}, { deep: true })
 </script>
 
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-f">
     视频监控系统
   </div>
 </template>

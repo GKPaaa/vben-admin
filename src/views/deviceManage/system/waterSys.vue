@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-f">
     消防水监测系统
   </div>
 </template>
