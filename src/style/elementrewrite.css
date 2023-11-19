@@ -1,0 +1,4 @@
+/* 菜单栏底部横线 */
+.el-menu--horizontal.el-menu {
+  border-bottom: none !important;
+}

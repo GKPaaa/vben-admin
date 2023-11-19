@@ -3,6 +3,7 @@ import "./style.css";
 import App from "./App.vue";
 import router from "./router/index";
 import "./style/public.css";
+import "./style/elementrewrite.css";
 
 // 引入组件库
 import ElementPlus from "element-plus";
